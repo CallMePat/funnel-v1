@@ -12,3 +12,8 @@ export interface Stage1Content {
   headline: string;
   subline: string;
 }
+
+export interface FooterLink {
+  label: string;
+  href: string;
+}

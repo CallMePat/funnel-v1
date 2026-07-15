@@ -157,6 +157,45 @@ export const dict = {
   footer: {
     title: "Isidore AI",
     subtitle: "Executive Communication Assets™",
-    tagline: "Mesurer. Améliorer. Convaincre."
+    tagline: "Mesurer. Améliorer. Convaincre.",
+    newFunnel: {
+      brandName: "ISIDORE",
+      headline: "Maîtrisez l'anglais business pour vos moments décisifs.",
+      tagline:
+        "Coaching IA personnalisé, diagnostic rapide et entraînement à fort impact pour les dirigeants qui veulent parler avec plus de clarté, d'autorité et d'influence.",
+      sections: {
+        journey: "Parcours",
+        focusAreas: "Axes de Travail",
+        builtFor: "Conçu Pour",
+        language: "Langue",
+      },
+      subscribe: {
+        placeholder: "Entrez votre e-mail",
+        button: "S'INSCRIRE",
+      },
+      links: {
+        journey: [
+          { label: "Profil exécutif", href: "#" },
+          { label: "Diagnostic IA", href: "#" },
+          { label: "Plan de progression", href: "#" },
+          { label: "Modules d'entraînement", href: "#" },
+          { label: "Tableau de bord", href: "#" },
+          { label: "Certification d'aisance", href: "#" }
+        ],
+        focusAreas: [
+          { label: "Leadership Speaking", href: "#" },
+          { label: "Negotiation Mastery", href: "#" },
+          { label: "Investor Pitch", href: "#" },
+          { label: "Cross-Cultural Leadership", href: "#" }
+        ],
+      },
+      audience:
+        "Pensé pour les CEO, fondateurs et dirigeants qui ont besoin d'un anglais plus fort pour leurs réunions, levées de fonds, négociations et prises de parole à l'international.",
+      languageSwitcher: {
+        label: "Choisir la langue",
+        en: "English",
+        fr: "Français",
+      },
+    },
   }
 };

@@ -157,6 +157,45 @@ export const dict: DictShape = {
   footer: {
     title: "Isidore AI",
     subtitle: "Executive Communication Assets™",
-    tagline: "Measure. Improve. Convince."
+    tagline: "Measure. Improve. Convince.",
+    newFunnel: {
+      brandName: "ISIDORE",
+      headline: "Master business English for your highest-stakes moments.",
+      tagline:
+        "Personalized AI coaching, fast diagnostics, and high-impact practice for leaders who want to speak with more clarity, authority, and influence.",
+      sections: {
+        journey: "Journey",
+        focusAreas: "Focus Areas",
+        builtFor: "Built For",
+        language: "Language",
+      },
+      subscribe: {
+        placeholder: "Enter your email",
+        button: "SUBSCRIBE",
+      },
+      links: {
+        journey: [
+          { label: "Executive Profile", href: "#" },
+          { label: "AI Diagnostic", href: "#" },
+          { label: "Progression Plan", href: "#" },
+          { label: "Training Modules", href: "#" },
+          { label: "Progress Dashboard", href: "#" },
+          { label: "Fluency Certification", href: "#" }
+        ],
+        focusAreas: [
+          { label: "Leadership Speaking", href: "#" },
+          { label: "Negotiation Mastery", href: "#" },
+          { label: "Investor Pitch", href: "#" },
+          { label: "Cross-Cultural Leadership", href: "#" }
+        ],
+      },
+      audience:
+        "Built for CEOs, founders, and senior executives who need stronger English for meetings, investor conversations, negotiations, and international leadership.",
+      languageSwitcher: {
+        label: "Choose language",
+        en: "English",
+        fr: "Français",
+      },
+    },
   }
 };
