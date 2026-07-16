@@ -1,6 +1,67 @@
 export type DictShape = typeof dict;
 
 export const dict = {
+  newFunnel: {
+    hero: {
+      brand: "ISIDORE",
+      letsTalk: "TÉLÉCHARGER L'APP",
+      menu: "MENU",
+      title: ["L'anglais business,", "conçu pour diriger."],
+      cta: "DÉMARRER MON DIAGNOSTIC",
+      established: {
+        year: "EST. 2025",
+        note: "COACHING IA CONÇU POUR LES DIRIGEANTS.",
+      },
+      blurb:
+        "Coaching IA, simulations de situations réelles et scores mesurables, conçus pour les CEO qui dirigent en anglais.",
+      hint: ["MAINTENEZ POUR 🎙 PITCHER", "OSEZ ⚡ PRENDRE LA PAROLE."],
+    },
+    about: {
+      label: "À PROPOS",
+      statement:
+        "Isidore est un tuteur d'anglais propulsé par l'IA qui forme des dirigeants confiants à l'international grâce au coaching personnalisé, aux simulations de situations réelles et aux progrès mesurables.",
+      notes: [
+        "NOUS ENTRAÎNONS POUR LE RÉEL\nLA CLARTÉ D'ABORD, L'INFLUENCE TOUJOURS,\nCONÇU POUR LES DIRIGEANTS.",
+        "5 MINUTES PAR JOUR.\nDES PROGRÈS MESURABLES.",
+      ],
+      mission:
+        "Notre mission est de transformer la façon dont les dirigeants convainquent, influencent et communiquent en anglais — grâce à une expérience d'apprentissage premium, personnalisée et pilotée par l'IA.",
+      cta: "DÉCOUVRIR ISIDORE",
+      marquee: ["CONVAINCRE", "INFLUENCER", "COMMUNIQUER"],
+    },
+    footer: {
+      tagline: "FORMONS DES LEADERS QUI INSPIRENT.",
+      timezone: { label: "CET", zone: "Europe/Paris" },
+      headline: ["Prêt à diriger", "en anglais ?"],
+      cta: "DÉMARRER LA CONVERSATION",
+      brandName: "ISIDORE",
+      soundHint: "SON ACTIVÉ 🎵 SURVOLEZ LES LIGNES.",
+      enquiry: {
+        label: "CONTACT BUSINESS",
+        email: "hello@isidore.ai",
+        phone: "+33 1 84 80 00 00",
+      },
+      social: {
+        label: "RÉSEAUX",
+        links: [
+          { label: "LinkedIn", href: "#" },
+          { label: "X", href: "#" },
+          { label: "YouTube", href: "#" },
+          { label: "Instagram", href: "#" },
+        ],
+      },
+      wordmark: "ISIDORE",
+    },
+    menu: {
+      links: [
+        { label: "Diagnostic", href: "#" },
+        { label: "Entraînement", href: "#" },
+        { label: "À propos", href: "#" },
+        { label: "Contact", href: "#" },
+      ],
+      nameStory: "L'HISTOIRE DU NOM ISIDORE",
+    },
+  },
   meta: {
     title: "ISIDORE AI - Préparation Exécutive",
     description: "Préparation Exécutive - Mesurer. Améliorer. Convaincre.",

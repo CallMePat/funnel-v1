@@ -1,0 +1,46 @@
+import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import ArrowLink from "../reusable/ArrowLink";
+import ScrollRevealText from "./ScrollRevealText";
+import InfoBlock from "./InfoBlock";
+import Marquee from "./Marquee";
+
+type AboutContent = DictShape["newFunnel"]["about"];
+
+export interface AboutProps {
+  content: AboutContent;
+}
+
+export default function About({ content }: AboutProps) {
+  return (
+    <section className="flex min-h-screen flex-col justify-between overflow-hidden bg-[#111110] font-['Archivo',Helvetica,sans-serif] text-white">
+      <div className="px-5 pt-14 sm:px-8 lg:px-10 lg:pt-20">
+        <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
+          <p className="m-0 shrink-0 font-mono text-[11px] uppercase tracking-[1.5px] text-neutral-400">
+            {content.label}
+          </p>
+          <ScrollRevealText
+            text={content.statement}
+            className="m-0 max-w-4xl text-3xl font-medium leading-[1.25] tracking-[-0.5px] text-neutral-100 sm:text-4xl lg:pl-10 lg:text-[3.1rem]"
+          />
+        </div>
+
+        <div className="mt-20 grid gap-16 lg:mt-28 lg:grid-cols-2 lg:gap-10">
+          <div className="flex flex-col gap-24 lg:gap-40 lg:pl-24">
+            <InfoBlock text={content.notes[0]} withRule />
+            <InfoBlock text={content.notes[1]} />
+          </div>
+
+          <div className="flex max-w-88 flex-col gap-8 lg:justify-self-center">
+            <span aria-hidden="true" className="text-neutral-400">✦</span>
+            <p className="m-0 text-[15px] leading-relaxed text-neutral-200">{content.mission}</p>
+            <div>
+              <ArrowLink label={content.cta} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <Marquee words={content.marquee} />
+    </section>
+  );
+}

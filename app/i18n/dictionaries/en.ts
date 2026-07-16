@@ -1,6 +1,67 @@
 import type { DictShape } from './fr';
 
 export const dict: DictShape = {
+  newFunnel: {
+    hero: {
+      brand: "ISIDORE",
+      letsTalk: "DOWNLOAD APP",
+      menu: "MENU",
+      title: ["Business English,", "designed to lead."],
+      cta: "START MY DIAGNOSTIC",
+      established: {
+        year: "EST. 2025",
+        note: "AI COACHING BUILT FOR C-LEVEL LEADERS.",
+      },
+      blurb:
+        "AI coaching, real-world simulations, and measurable scores built for CEOs who lead in English.",
+      hint: ["HOLD TO 🎙 PITCH", "DARE ⚡ TO SPEAK UP."],
+    },
+    about: {
+      label: "ABOUT",
+      statement:
+        "Isidore is an AI-powered English tutor crafting confident international leaders through personalized coaching, real-world simulations, and measurable progress.",
+      notes: [
+        "WE TRAIN FOR REAL SITUATIONS\nCLARITY FIRST, INFLUENCE ALWAYS,\nBUILT FOR LEADERS.",
+        "5 MINUTES A DAY.\nMEASURABLE PROGRESS.",
+      ],
+      mission:
+        "Our mission is to transform the way leaders convince, influence, and communicate in English — through a premium, personalized, AI-driven learning experience.",
+      cta: "MORE ABOUT ISIDORE",
+      marquee: ["CONVINCE", "INFLUENCE", "COMMUNICATE"],
+    },
+    footer: {
+      tagline: "LET'S BUILD LEADERS WHO INSPIRE.",
+      timezone: { label: "CET", zone: "Europe/Paris" },
+      headline: ["Ready to lead", "in English?"],
+      cta: "START A CONVERSATION",
+      brandName: "ISIDORE",
+      soundHint: "SOUND ON 🎵 HOVER THE LINES.",
+      enquiry: {
+        label: "BUSINESS ENQUIRY",
+        email: "hello@isidore.ai",
+        phone: "+33 1 84 80 00 00",
+      },
+      social: {
+        label: "SOCIAL",
+        links: [
+          { label: "LinkedIn", href: "#" },
+          { label: "X", href: "#" },
+          { label: "YouTube", href: "#" },
+          { label: "Instagram", href: "#" },
+        ],
+      },
+      wordmark: "ISIDORE",
+    },
+    menu: {
+      links: [
+        { label: "Diagnostic", href: "#" },
+        { label: "Training", href: "#" },
+        { label: "About", href: "#" },
+        { label: "Contact", href: "#" },
+      ],
+      nameStory: "THE ISIDORE NAME STORY",
+    },
+  },
   meta: {
     title: "ISIDORE AI - Executive Readiness",
     description: "Executive Readiness - Measure. Improve. Convince.",
