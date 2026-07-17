@@ -38,7 +38,7 @@ export const dict = {
       soundHint: "SON ACTIVÉ 🎵 SURVOLEZ LES LIGNES.",
       enquiry: {
         label: "CONTACT BUSINESS",
-        email: "hello@isidore.ai",
+        email: "contact@isidoreai.org",
         phone: "+33 1 84 80 00 00",
       },
       social: {
@@ -51,6 +51,31 @@ export const dict = {
         ],
       },
       wordmark: "ISIDORE",
+    },
+    howItWorks: {
+      label: "COMMENT ÇA MARCHE",
+      steps: [
+        {
+          title: "Profil",
+          description:
+            "Votre rôle, votre secteur et vos objectifs — votre profil exécutif façonne tout le parcours.",
+        },
+        {
+          title: "Diagnostic",
+          description:
+            "Une évaluation IA adaptative de 15 minutes note votre aisance, votre vocabulaire et votre impact de leader.",
+        },
+        {
+          title: "Entraînement",
+          description:
+            "Des micro-sessions quotidiennes de 5 à 10 minutes — des simulations réelles avec feedback vocal instantané.",
+        },
+        {
+          title: "Certification",
+          description:
+            "Des progrès mesurables, un tableau de bord en direct et la certification CEO English Fluency.",
+        },
+      ],
     },
     menu: {
       links: [

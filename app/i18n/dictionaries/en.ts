@@ -38,7 +38,7 @@ export const dict: DictShape = {
       soundHint: "SOUND ON 🎵 HOVER THE LINES.",
       enquiry: {
         label: "BUSINESS ENQUIRY",
-        email: "hello@isidore.ai",
+        email: "contact@isidoreai.org",
         phone: "+33 1 84 80 00 00",
       },
       social: {
@@ -51,6 +51,31 @@ export const dict: DictShape = {
         ],
       },
       wordmark: "ISIDORE",
+    },
+    howItWorks: {
+      label: "HOW IT WORKS",
+      steps: [
+        {
+          title: "Profile",
+          description:
+            "Tell us your role, sector, and goals — your executive profile shapes the entire journey.",
+        },
+        {
+          title: "Diagnostic",
+          description:
+            "A 15-minute adaptive AI assessment scores your fluency, vocabulary, and leadership impact.",
+        },
+        {
+          title: "Training",
+          description:
+            "Daily 5–10 minute micro-sessions — real-world simulations with instant voice feedback.",
+        },
+        {
+          title: "Certification",
+          description:
+            "Measurable progress, a live dashboard, and the CEO English Fluency credential.",
+        },
+      ],
     },
     menu: {
       links: [

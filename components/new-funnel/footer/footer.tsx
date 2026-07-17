@@ -1,5 +1,6 @@
 import type { DictShape } from "@/app/i18n/dictionaries/fr";
 import ArrowLink from "../reusable/ArrowLink";
+import SocialIcon from "../reusable/SocialIcon";
 import LocalTime from "./LocalTime";
 import LabeledBlock from "./LabeledBlock";
 import LinesWordmark from "./LinesWordmark";
@@ -69,14 +70,15 @@ export default function Footer({ content }: FooterProps) {
               </LabeledBlock>
 
               <LabeledBlock label={content.social.label}>
-                <div className="grid grid-cols-2 gap-x-6 gap-y-2">
+                <div className="flex items-center gap-5">
                   {content.social.links.map((link) => (
                     <a
                       key={link.label}
                       href={link.href}
-                      className="text-[15px] text-neutral-200 no-underline transition-colors hover:text-white"
+                      aria-label={link.label}
+                      className="text-neutral-300 transition-colors hover:text-white"
                     >
-                      {link.label}
+                      <SocialIcon name={link.label} />
                     </a>
                   ))}
                 </div>

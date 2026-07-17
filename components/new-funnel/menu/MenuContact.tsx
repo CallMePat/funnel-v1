@@ -1,4 +1,5 @@
 import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import SocialIcon from "../reusable/SocialIcon";
 
 type FooterContent = DictShape["newFunnel"]["footer"];
 
@@ -40,14 +41,15 @@ function MenuContact({ enquiry, social }: MenuContactProps) {
         <p className="m-0 text-[12px] uppercase tracking-[0.5px] text-neutral-400">
           {social.label}
         </p>
-        <div className="grid max-w-90 grid-cols-2 gap-x-10 gap-y-2">
+        <div className="flex items-center gap-5">
           {social.links.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="text-[17px] text-[#1c1c1c] no-underline transition-colors hover:underline"
+              aria-label={link.label}
+              className="text-[#1c1c1c] transition-colors hover:text-black"
             >
-              {link.label}
+              <SocialIcon name={link.label} />
             </a>
           ))}
         </div>
