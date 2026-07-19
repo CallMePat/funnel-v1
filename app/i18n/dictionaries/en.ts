@@ -6,7 +6,7 @@ export const dict: DictShape = {
       brand: "ISIDORE",
       letsTalk: "DOWNLOAD APP",
       menu: "MENU",
-      title: ["Business English,", "designed to lead."],
+      title: ["Does your audience perceive,", "your expertise at its true value ?"],
       cta: "START MY DIAGNOSTIC",
       established: {
         year: "EST. 2025",

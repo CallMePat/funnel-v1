@@ -10,6 +10,7 @@ import {
   useTransform,
 } from "motion/react";
 import RollingDigit from "./RollingDigit";
+import Image from "next/image";
 
 type Phase = "loading" | "break" | "expand" | "done";
 
@@ -100,10 +101,11 @@ function Preloader() {
                     : { type: "spring", stiffness: 150, damping: 20, delay: 0.15 }
                 }
               >
-                <svg width="64" height="64" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+                <Image src="/logos/logo.png" alt="Isidore Mark" width={64} height={64} />
+                {/* <svg width="64" height="64" viewBox="0 0 26 26" fill="none" aria-hidden="true">
                   <path d="M3 6h14l-3 4H8l4 10-3 2L3 6z" fill="white" />
                   <path d="M14 12h9l-2.5 3.5H16L14 12z" fill="white" />
-                </svg>
+                </svg> */}
               </motion.div>
             </>
           )}

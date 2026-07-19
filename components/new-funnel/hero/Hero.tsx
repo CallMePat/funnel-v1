@@ -29,7 +29,7 @@ export default function Hero({ content, menu }: HeroProps) {
 
       <div className="relative z-10 flex flex-1 flex-col justify-between px-5 pb-8 pt-4 sm:px-8 lg:px-10">
         <div className="flex flex-col gap-8">
-          <h1 className="m-0 max-w-xl text-5xl font-medium leading-[1.05] tracking-[-1px] text-neutral-100 sm:text-6xl lg:text-7xl">
+          <h1 className="m-0 max-w-4xl text-5xl font-medium leading-[1.05] tracking-[-1px] text-neutral-100 sm:text-6xl lg:text-7xl">
             {content.title[0]}
             <br />
             {content.title[1]}
