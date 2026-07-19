@@ -6,7 +6,7 @@ export const dict = {
       brand: "ISIDORE",
       letsTalk: "TÉLÉCHARGER L'APP",
       menu: "MENU",
-      title: ["L'anglais business,", "conçu pour diriger."],
+      title: ["Votre audience perçoit-elle,", "votre expertise à sa juste valeur ?"],
       cta: "DÉMARRER MON DIAGNOSTIC",
       established: {
         year: "EST. 2025",
