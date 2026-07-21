@@ -18,7 +18,7 @@ export default function Hero({ content }: HeroProps) {
       <div className="relative z-10 flex flex-1 flex-col justify-between px-5 pb-8 pt-28 sm:px-8 lg:px-10 lg:pt-32">
         <div className="flex flex-col gap-8">
           <Reveal>
-            <h1 className="m-0 max-w-2xl text-5xl font-medium leading-[1.05] tracking-[-1px] text-neutral-100 sm:text-4xl lg:text-5xl">
+            <h1 className="m-0 max-w-xl text-5xl font-medium leading-[1.05] tracking-[-1px] text-neutral-100 sm:text-4xl lg:text-5xl">
               {content.title[0]} {/* <br /> */}
               {content.title[1]}
             </h1>
