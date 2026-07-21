@@ -4,17 +4,17 @@ export const dict: DictShape = {
   newFunnel: {
     hero: {
       brand: "ISIDORE",
-      letsTalk: "DOWNLOAD APP",
+      letsTalk: "GET STARTED",
       menu: "MENU",
-      title: ["Does your audience perceive,", "your expertise at its true value ?"],
-      cta: "START MY DIAGNOSTIC",
+      title: ["The difference", "is in the delivery."],
+      cta: "ANALYZE YOUR VOICE",
+      micLabel: "VOICE AI",
       established: {
         year: "EST. 2025",
-        note: "AI COACHING BUILT FOR C-LEVEL LEADERS.",
+        note: "EXECUTIVE VOICE\nCOACHING.",
       },
-      blurb:
-        "AI coaching, real-world simulations, and measurable scores built for CEOs who lead in English.",
-      hint: ["HOLD TO 🎙 PITCH", "DARE ⚡ TO SPEAK UP."],
+      blurb: "Voice AI for executive communication, clarity and influence.",
+      hint: ["HOLD TO ANALYZE", "DISCOVER HOW YOUR VOICE IS PERCEIVED."],
     },
     about: {
       label: "ABOUT",
@@ -30,12 +30,11 @@ export const dict: DictShape = {
       marquee: ["CONVINCE", "INFLUENCE", "COMMUNICATE"],
     },
     footer: {
-      tagline: "LET'S BUILD LEADERS WHO INSPIRE.",
-      timezone: { label: "CET", zone: "Europe/Paris" },
-      headline: ["Ready to lead", "in English?"],
-      cta: "START A CONVERSATION",
+      tagline: "LET'S BUILD THE VOICE PEOPLE REMEMBER.",
+      timezone: { label: "WAT", zone: "Africa/Lagos" },
+      headline: ["Ready to make", "every word count?"],
+      cta: "START YOUR ASSESSMENT",
       brandName: "ISIDORE",
-      soundHint: "SOUND ON 🎵 HOVER THE LINES.",
       enquiry: {
         label: "BUSINESS ENQUIRY",
         email: "contact@isidoreai.org",
@@ -46,8 +45,8 @@ export const dict: DictShape = {
         links: [
           { label: "LinkedIn", href: "#" },
           { label: "X", href: "#" },
-          { label: "YouTube", href: "#" },
           { label: "Instagram", href: "#" },
+          { label: "YouTube", href: "#" },
         ],
       },
       wordmark: "ISIDORE",

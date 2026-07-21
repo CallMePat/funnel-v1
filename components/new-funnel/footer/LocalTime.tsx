@@ -25,7 +25,10 @@ function LocalTime({ label, zone }: LocalTimeProps) {
   }, [zone]);
 
   return (
-    <p className="m-0 whitespace-nowrap text-[11px] uppercase tracking-[0.5px] text-neutral-400">
+    <p
+      className="m-0 whitespace-nowrap text-[12px] uppercase tabular-nums"
+      style={{ color: "#77777b" }}
+    >
       {label} <span aria-hidden="true">→</span> {time}
     </p>
   );

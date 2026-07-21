@@ -4,17 +4,17 @@ export const dict = {
   newFunnel: {
     hero: {
       brand: "ISIDORE",
-      letsTalk: "TÉLÉCHARGER L'APP",
+      letsTalk: "COMMENCER",
       menu: "MENU",
       title: ["Votre audience perçoit-elle,", "votre expertise à sa juste valeur ?"],
-      cta: "DÉMARRER MON DIAGNOSTIC",
+      cta: "ANALYSEZ VOTRE VOIX",
+      micLabel: "IA VOCALE",
       established: {
         year: "EST. 2025",
-        note: "COACHING IA CONÇU POUR LES DIRIGEANTS.",
+        note: "COACHING VOCAL\nDIRIGEANTS.",
       },
-      blurb:
-        "Coaching IA, simulations de situations réelles et scores mesurables, conçus pour les CEO qui dirigent en anglais.",
-      hint: ["MAINTENEZ POUR 🎙 PITCHER", "OSEZ ⚡ PRENDRE LA PAROLE."],
+      blurb: "IA vocale pour la communication, la clarté et l'influence des dirigeants.",
+      hint: ["MAINTENEZ POUR ANALYSER", "DÉCOUVREZ COMMENT VOTRE VOIX EST PERÇUE."],
     },
     about: {
       label: "À PROPOS",
@@ -30,12 +30,11 @@ export const dict = {
       marquee: ["CONVAINCRE", "INFLUENCER", "COMMUNIQUER"],
     },
     footer: {
-      tagline: "FORMONS DES LEADERS QUI INSPIRENT.",
-      timezone: { label: "CET", zone: "Europe/Paris" },
-      headline: ["Prêt à diriger", "en anglais ?"],
-      cta: "DÉMARRER LA CONVERSATION",
+      tagline: "CONSTRUISONS UNE VOIX QUE L'ON RETIENT.",
+      timezone: { label: "WAT", zone: "Africa/Lagos" },
+      headline: ["Prêt à faire compter", "chaque mot ?"],
+      cta: "DÉMARRER VOTRE BILAN",
       brandName: "ISIDORE",
-      soundHint: "SON ACTIVÉ 🎵 SURVOLEZ LES LIGNES.",
       enquiry: {
         label: "CONTACT BUSINESS",
         email: "contact@isidoreai.org",
@@ -46,8 +45,8 @@ export const dict = {
         links: [
           { label: "LinkedIn", href: "#" },
           { label: "X", href: "#" },
-          { label: "YouTube", href: "#" },
           { label: "Instagram", href: "#" },
+          { label: "YouTube", href: "#" },
         ],
       },
       wordmark: "ISIDORE",
