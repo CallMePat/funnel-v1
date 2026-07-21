@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import type { DictShape } from "@/app/i18n/dictionaries/fr";
 import AnimatedCopy from "./AnimatedCopy";
-import { gapSize } from "three/tsl";
 
 type SpiralContent = DictShape["newFunnel"]["spiral"];
 

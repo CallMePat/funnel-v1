@@ -28,6 +28,84 @@ export const dict: DictShape = {
         "Our mission is to transform the way leaders convince, influence, and communicate in English — through a premium, personalized, AI-driven learning experience.",
       cta: "MORE ABOUT ISIDORE",
       marquee: ["CONVINCE", "INFLUENCE", "COMMUNICATE"],
+      video: {
+        label: "THE FILM",
+        caption: "THE EXECUTIVE GROWTH JOURNEY™",
+        hint: "SCROLL TO EXPAND",
+      },
+    },
+    keyFacts: {
+      heading: "Key facts",
+      subtitle: "The structural realities behind growth, execution, and momentum.",
+      cards: [
+        {
+          variant: "image" as const,
+          label: "ESSENTIAL STAGES",
+          value: "8",
+          suffix: "",
+          caption: "Awareness, Intention, Understanding, Conviction, Decision, Alignment, Execution, Growth.",
+          image: "/images/image1.jpeg",
+        },
+        {
+          variant: "circle" as const,
+          label: "CORE QUESTION",
+          value: "1",
+          suffix: "",
+          caption: "Where does growth stop inside your organization today?",
+          image: "",
+        },
+        {
+          variant: "dark" as const,
+          label: "VALUE AT RISK",
+          value: "M$",
+          suffix: "",
+          caption: "Millions of dollars in value are lost every year when execution never truly begins.",
+          image: "/images/image2.png",
+        },
+      ],
+    },
+    selectedWork: {
+      heading: "The Executive Growth Journey™",
+      viewAll: "VIEW THE JOURNEY",
+      explore: "EXPLORE",
+      projects: [
+        {
+          name: "Awareness",
+          description:
+            "Every transformation starts when a CEO senses that something needs to change, even before the real problem is fully visible.",
+          image: "/images/image1.jpeg",
+          url: "#",
+        },
+        {
+          name: "Conviction",
+          description:
+            "Understanding is not enough. Organizations move when teams, investors, partners, and clients truly believe in the direction.",
+          image: "/images/image2.png",
+          url: "#",
+        },
+        {
+          name: "Execution",
+          description:
+            "Plans become actions. Conversations become results. Execution is where strategy turns into measurable value.",
+          image: "/images/test.png",
+          url: "#",
+        },
+      ],
+    },
+    spiral: {
+      heading: "Growth never happens by chance. It is engineered.",
+      images: [
+        "/images/image1.jpeg",
+        "/images/image2.png",
+        "/images/image1.jpeg",
+        "/images/image2.png",
+        "/images/image1.jpeg",
+        "/images/image2.png",
+        "/images/image1.jpeg",
+        "/images/image2.png",
+        "/images/image1.jpeg",
+        "/images/image2.png",
+      ],
     },
     footer: {
       tagline: "LET'S BUILD THE VOICE PEOPLE REMEMBER.",

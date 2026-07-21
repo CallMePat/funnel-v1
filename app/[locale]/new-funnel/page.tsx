@@ -1,5 +1,5 @@
 import { getDictionary, Locale } from "@/app/i18n";
-import NewFunnelFlow from "@/components/new-funnel/NewFunnelFlow";
+import FunnelFlow from "@/components/new-funnel/NewFunnelFlow";
 
 async function NewFunnelPage({ params }: { params: Promise<{ locale: Locale }> }) {
   const resolvedParams = await params;
@@ -7,7 +7,7 @@ async function NewFunnelPage({ params }: { params: Promise<{ locale: Locale }> }
 
   return (
     <div>
-      <NewFunnelFlow dict={dict.newFunnel} locale={resolvedParams.locale} />
+      <FunnelFlow dict={dict.newFunnel} locale={resolvedParams.locale} />
     </div>
   );
 }
