@@ -1,9 +1,191 @@
-import type { DictShape } from './fr';
+import type { DictShape } from "./fr";
 
 export const dict: DictShape = {
+  newFunnel: {
+    hero: {
+      brand: "COMPETITIVIA",
+      letsTalk: "GET STARTED",
+      menu: "MENU",
+      title: [
+        "The Journey Every CEO Must Take",
+        "to Turn Vision into Growth.",
+      ],
+      cta: "DISCOVER YOUR EXECUTIVE GROWTH SCORE™",
+      micLabel: "EXECUTION GAP™",
+      established: {
+        year: "EST. 2025",
+        note: "EXECUTIVE GROWTH\nINTELLIGENCE.",
+      },
+      blurb: "Growth begins when a vision becomes execution.",
+      hint: ["SCROLL TO TRACE THE JOURNEY", "DISCOVER WHERE GROWTH STOPS."],
+    },
+    about: {
+      label: "THE EXECUTION GAP™",
+      statement:
+        "Between a vision and its execution, something invisible slows momentum, scatters teams, delays projects, and destroys value. We call that invisible distance the Execution Gap™.",
+      notes: [
+        "GROWTH IS NOT SIMPLY A BUSINESS CHALLENGE.\nIT IS A HUMAN JOURNEY EVERY CEO MUST TAKE.",
+        "PROJECTS SLOW DOWN.\nTEAMS DRIFT APART.\nOPPORTUNITIES DISAPPEAR.",
+      ],
+      mission:
+        "Our mission is simple: reduce the distance between vision and growth by helping CEOs move faster from awareness to execution.",
+      cta: "DISCOVER YOUR EXECUTIVE GROWTH DIAGNOSTIC™",
+      marquee: ["AWARENESS", "ALIGNMENT", "EXECUTION"],
+      video: {
+        label: "THE FILM",
+        caption: "THE EXECUTIVE GROWTH JOURNEY™",
+        hint: "SCROLL TO EXPAND",
+      },
+    },
+    keyFacts: {
+      heading: "Key facts",
+      subtitle: "The structural realities behind growth, execution, and momentum.",
+      cards: [
+        {
+          variant: "image" as const,
+          label: "ESSENTIAL STAGES",
+          value: "8",
+          suffix: "",
+          caption: "Awareness, Intention, Understanding, Conviction, Decision, Alignment, Execution, Growth.",
+          image: "/images/image1.jpeg",
+        },
+        {
+          variant: "circle" as const,
+          label: "CORE QUESTION",
+          value: "1",
+          suffix: "",
+          caption: "Where does growth stop inside your organization today?",
+          image: "",
+        },
+        {
+          variant: "dark" as const,
+          label: "VALUE AT RISK",
+          value: "M$",
+          suffix: "",
+          caption: "Millions of dollars in value are lost every year when execution never truly begins.",
+          image: "/images/image2.png",
+        },
+      ],
+    },
+    selectedWork: {
+      heading: "The Executive Growth Journey™",
+      viewAll: "VIEW THE JOURNEY",
+      explore: "EXPLORE",
+      projects: [
+        {
+          name: "Awareness",
+          description:
+            "Every transformation starts when a CEO senses that something needs to change, even before the real problem is fully visible.",
+          image: "/images/image1.jpeg",
+          url: "#",
+        },
+        {
+          name: "Conviction",
+          description:
+            "Understanding is not enough. Organizations move when teams, investors, partners, and clients truly believe in the direction.",
+          image: "/images/image2.png",
+          url: "#",
+        },
+        {
+          name: "Execution",
+          description:
+            "Plans become actions. Conversations become results. Execution is where strategy turns into measurable value.",
+          image: "/images/test.png",
+          url: "#",
+        },
+      ],
+    },
+    spiral: {
+      heading: "Growth never happens by chance. It is engineered.",
+      images: [
+        "/images/image1.jpeg",
+        "/images/image2.png",
+        "/images/image1.jpeg",
+        "/images/image2.png",
+        "/images/image1.jpeg",
+        "/images/image2.png",
+        "/images/image1.jpeg",
+        "/images/image2.png",
+        "/images/image1.jpeg",
+        "/images/image2.png",
+      ],
+    },
+    footer: {
+      tagline: "REDUCE THE DISTANCE BETWEEN VISION AND GROWTH.",
+      timezone: { label: "WAT", zone: "Africa/Lagos" },
+      headline: ["Discover where", "growth stops."],
+      cta: "DISCOVER YOUR EXECUTIVE GROWTH SCORE™",
+      brandName: "COMPETITIVIA",
+      enquiry: {
+        label: "BUSINESS ENQUIRY",
+        email: "contact@isidoreai.org",
+        phone: "+33 1 84 80 00 00",
+      },
+      social: {
+        label: "SOCIAL",
+        links: [
+          { label: "LinkedIn", href: "#" },
+          { label: "X", href: "#" },
+          { label: "Instagram", href: "#" },
+          { label: "YouTube", href: "#" },
+        ],
+      },
+      wordmark: "ISIDORE",
+    },
+    howItWorks: {
+      label: "EIGHT STAGES",
+      steps: [
+        {
+          title: "Awareness",
+          description:
+            "Something needs to change. The problem is real, but it is not yet visible.",
+        },
+        {
+          title: "Understanding",
+          description:
+            "Complexity becomes clarity. The CEO no longer asks what is happening, but what the next right decision is.",
+        },
+        {
+          title: "Alignment",
+          description:
+            "Teams commit. Managers support. Partners align. Momentum replaces resistance.",
+        },
+        {
+          title: "Growth",
+          description:
+            "Growth is never the objective. Growth is the consequence of disciplined execution.",
+        },
+      ],
+    },
+    menu: {
+      links: [
+        { label: "Awareness", href: "#" },
+        { label: "Conviction", href: "#" },
+        { label: "Execution", href: "#" },
+        { label: "Contact", href: "#" },
+      ],
+      nameStory: "THE EXECUTION GAP™",
+    },
+    featuredProjects: {
+      prefix: "Stages",
+      explore: "Explore",
+      slides: [
+        {
+          title: "Awareness",
+          image: "/images/image1.jpeg",
+          url: "#",
+        },
+        {
+          title: "Alignment",
+          image: "/images/image2.png",
+          url: "#",
+        },
+      ],
+    },
+  },
   meta: {
-    title: "ISIDORE AI - Executive Readiness",
-    description: "Executive Readiness - Measure. Improve. Convince.",
+    title: "The Executive Growth Journey™",
+    description: "The journey every CEO must take to turn vision into growth.",
   },
   hero: {
     title: "ISIDORE AI",
@@ -12,14 +194,15 @@ export const dict: DictShape = {
     roles: ["CEO.", "Entrepreneur.", "Consultant.", "Coach."],
   },
   vsl: {
-    footer: "Discover the invisible gaps in your executive communication and learn how to turn them into assets.",
+    footer:
+      "Discover the invisible gaps in your executive communication and learn how to turn them into assets.",
   },
   painPoints: {
     intro: "Have you ever asked yourself...",
     points: [
       "Why don't my clients fully understand the value I bring?",
       "Why does someone less qualified win the opportunity?",
-      "Why doesn't my message create the impact I know it should?"
+      "Why doesn't my message create the impact I know it should?",
     ],
   },
   communicationAsset: {
@@ -32,8 +215,8 @@ export const dict: DictShape = {
     points: [
       "Without months of training.",
       "Without expensive coaching.",
-      "Without years of trial and error."
-    ]
+      "Without years of trial and error.",
+    ],
   },
   ctas: {
     primary1: "Build My Pitch Asset™",
@@ -46,21 +229,25 @@ export const dict: DictShape = {
   decisionStart: {
     title: "Every important business decision starts with a conversation.",
     subtitle: "Every conversation shapes:",
-    shapes: ["Trust", "Authority", "Influence", "Decisions", "Business Opportunities"]
+    shapes: ["Trust", "Authority", "Influence", "Decisions", "Business Opportunities"],
   },
   worth: {
     title: "Your audience decides what your expertise is worth...",
     subtitle: "long before they fully understand it.",
-    makeSure: "Make sure your audience experiences your expertise at its true value."
+    makeSure: "Make sure your audience experiences your expertise at its true value.",
   },
   preparingFor: {
     title: "What are you preparing for?",
     options: [
-      "Winning a client", "Raising investment",
-      "Closing a partnership", "Speaking on stage",
-      "Negotiating a contract", "Recruiting top talent",
-      "Meeting your Board", "Expanding internationally"
-    ]
+      "Winning a client",
+      "Raising investment",
+      "Closing a partnership",
+      "Speaking on stage",
+      "Negotiating a contract",
+      "Recruiting top talent",
+      "Meeting your Board",
+      "Expanding internationally",
+    ],
   },
   assessment: {
     title: "Executive Communication Assessment™",
@@ -68,10 +255,13 @@ export const dict: DictShape = {
     steps: ["Record", "Analyze", "Improve"],
     receiveInstantly: "Receive instantly",
     deliverables: [
-      "Executive Communication Score™", "Executive Presence™",
-      "Authority™", "Persuasion™",
-      "Leadership Signal™", "Top 3 Executive Insights™"
-    ]
+      "Executive Communication Score™",
+      "Executive Presence™",
+      "Authority™",
+      "Persuasion™",
+      "Leadership Signal™",
+      "Top 3 Executive Insights™",
+    ],
   },
   confidence: {
     title: "People don't buy your expertise first.",
@@ -82,7 +272,7 @@ export const dict: DictShape = {
     influenceText: "Persuade others as confidence shapes perceptions.",
     decisionTitle: "Decision",
     decisionText: "Drive choices by converting influence into action.",
-    footer: "Your communication shapes every one of them."
+    footer: "Your communication shapes every one of them.",
   },
   sprint: {
     title: "Pitch Asset Sprint™",
@@ -94,10 +284,14 @@ export const dict: DictShape = {
     transformation: "A measurable executive transformation.",
     leaveWith: "You leave with",
     deliverables: [
-      "Executive Communication Score™", "Pitch Asset Score™", "Before / After Comparison™",
-      "Executive Communication Report™", "Executive Roadmap™", "AI Recommendations™",
-      "Priority Access to Isidore AI App 2™"
-    ]
+      "Executive Communication Score™",
+      "Pitch Asset Score™",
+      "Before / After Comparison™",
+      "Executive Communication Report™",
+      "Executive Roadmap™",
+      "AI Recommendations™",
+      "Priority Access to Isidore AI App 2™",
+    ],
   },
   investment: {
     title: "Investment",
@@ -106,7 +300,7 @@ export const dict: DictShape = {
     bonusText: "Join within 24 hours after your Executive Communication Masterclass™",
     receiveCredit: "Receive a €500 Executive Credit",
     yourInvestmentLabel: "Your Investment",
-    yourInvestmentPrice: "€1,490"
+    yourInvestmentPrice: "€1,490",
   },
   whyIsidore: {
     title: "Why Isidore AI?",
@@ -114,10 +308,13 @@ export const dict: DictShape = {
     buildAssets: "We build Executive Communication Assets™.",
     poweredBy: "Powered by",
     features: [
-      "Artificial Intelligence", "Executive Psychology",
-      "Communication Science", "Live Executive Simulation",
-      "Continuous Measurement", "Data Intelligence"
-    ]
+      "Artificial Intelligence",
+      "Executive Psychology",
+      "Communication Science",
+      "Live Executive Simulation",
+      "Continuous Measurement",
+      "Data Intelligence",
+    ],
   },
   journey: {
     title: "Your Journey",
@@ -127,8 +324,8 @@ export const dict: DictShape = {
       "Pitch Asset Sprint™",
       "Executive Transformation™",
       "Isidore AI App 2™",
-      "Continuous Executive Readiness™"
-    ]
+      "Continuous Executive Readiness™",
+    ],
   },
   masterclass: {
     title: "Executive Communication Masterclass™",
@@ -141,8 +338,8 @@ export const dict: DictShape = {
       "Why some leaders create trust faster.",
       "What reduces executive credibility.",
       "How AI reveals invisible communication patterns.",
-      "The fastest way to prepare your next Executive Moment™."
-    ]
+      "The fastest way to prepare your next Executive Moment™.",
+    ],
   },
   bigIdea: {
     title: "The Big Idea",
@@ -152,50 +349,11 @@ export const dict: DictShape = {
     perceptionInfluences: "And this perception influences:",
     influences: ["your clients,", "your partners,", "your investors,", "your teams,", "your opportunities."],
     whenCommunicationReflects: "When your communication finally reflects your true value...",
-    changes: ["your leadership changes.", "Your influence changes.", "Your business changes."]
+    changes: ["your leadership changes.", "Your influence changes.", "Your business changes."],
   },
   footer: {
     title: "Isidore AI",
     subtitle: "Executive Communication Assets™",
     tagline: "Measure. Improve. Convince.",
-    newFunnel: {
-      brandName: "ISIDORE",
-      headline: "Master business English for your highest-stakes moments.",
-      tagline:
-        "Personalized AI coaching, fast diagnostics, and high-impact practice for leaders who want to speak with more clarity, authority, and influence.",
-      sections: {
-        journey: "Journey",
-        focusAreas: "Focus Areas",
-        builtFor: "Built For",
-        language: "Language",
-      },
-      subscribe: {
-        placeholder: "Enter your email",
-        button: "SUBSCRIBE",
-      },
-      links: {
-        journey: [
-          { label: "Executive Profile", href: "#" },
-          { label: "AI Diagnostic", href: "#" },
-          { label: "Progression Plan", href: "#" },
-          { label: "Training Modules", href: "#" },
-          { label: "Progress Dashboard", href: "#" },
-          { label: "Fluency Certification", href: "#" }
-        ],
-        focusAreas: [
-          { label: "Leadership Speaking", href: "#" },
-          { label: "Negotiation Mastery", href: "#" },
-          { label: "Investor Pitch", href: "#" },
-          { label: "Cross-Cultural Leadership", href: "#" }
-        ],
-      },
-      audience:
-        "Built for CEOs, founders, and senior executives who need stronger English for meetings, investor conversations, negotiations, and international leadership.",
-      languageSwitcher: {
-        label: "Choose language",
-        en: "English",
-        fr: "Français",
-      },
-    },
-  }
+  },
 };

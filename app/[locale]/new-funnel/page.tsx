@@ -7,7 +7,7 @@ async function NewFunnelPage({ params }: { params: Promise<{ locale: Locale }> }
 
   return (
     <div>
-      <NewFunnelFlow dict={dict} locale={resolvedParams.locale} />
+      <NewFunnelFlow dict={dict.newFunnel} locale={resolvedParams.locale} />
     </div>
   );
 }
