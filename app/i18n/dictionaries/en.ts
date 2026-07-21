@@ -3,119 +3,38 @@ import type { DictShape } from "./fr";
 export const dict: DictShape = {
   newFunnel: {
     hero: {
-      brand: "COMPETITIVIA",
+      brand: "ISIDORE",
       letsTalk: "GET STARTED",
       menu: "MENU",
-      title: [
-        "The Journey Every CEO Must Take",
-        "to Turn Vision into Growth.",
-      ],
-      cta: "DISCOVER YOUR EXECUTIVE GROWTH SCORE™",
-      micLabel: "EXECUTION GAP™",
+      title: ["The difference", "is in the delivery."],
+      cta: "ANALYZE YOUR VOICE",
+      micLabel: "VOICE AI",
       established: {
         year: "EST. 2025",
-        note: "EXECUTIVE GROWTH\nINTELLIGENCE.",
+        note: "EXECUTIVE VOICE\nCOACHING.",
       },
-      blurb: "Growth begins when a vision becomes execution.",
-      hint: ["SCROLL TO TRACE THE JOURNEY", "DISCOVER WHERE GROWTH STOPS."],
+      blurb: "Voice AI for executive communication, clarity and influence.",
+      hint: ["HOLD TO ANALYZE", "DISCOVER HOW YOUR VOICE IS PERCEIVED."],
     },
     about: {
-      label: "THE EXECUTION GAP™",
+      label: "ABOUT",
       statement:
-        "Between a vision and its execution, something invisible slows momentum, scatters teams, delays projects, and destroys value. We call that invisible distance the Execution Gap™.",
+        "Isidore is an AI-powered English tutor crafting confident international leaders through personalized coaching, real-world simulations, and measurable progress.",
       notes: [
-        "GROWTH IS NOT SIMPLY A BUSINESS CHALLENGE.\nIT IS A HUMAN JOURNEY EVERY CEO MUST TAKE.",
-        "PROJECTS SLOW DOWN.\nTEAMS DRIFT APART.\nOPPORTUNITIES DISAPPEAR.",
+        "WE TRAIN FOR REAL SITUATIONS\nCLARITY FIRST, INFLUENCE ALWAYS,\nBUILT FOR LEADERS.",
+        "5 MINUTES A DAY.\nMEASURABLE PROGRESS.",
       ],
       mission:
-        "Our mission is simple: reduce the distance between vision and growth by helping CEOs move faster from awareness to execution.",
-      cta: "DISCOVER YOUR EXECUTIVE GROWTH DIAGNOSTIC™",
-      marquee: ["AWARENESS", "ALIGNMENT", "EXECUTION"],
-      video: {
-        label: "THE FILM",
-        caption: "THE EXECUTIVE GROWTH JOURNEY™",
-        hint: "SCROLL TO EXPAND",
-      },
-    },
-    keyFacts: {
-      heading: "Key facts",
-      subtitle: "The structural realities behind growth, execution, and momentum.",
-      cards: [
-        {
-          variant: "image" as const,
-          label: "ESSENTIAL STAGES",
-          value: "8",
-          suffix: "",
-          caption: "Awareness, Intention, Understanding, Conviction, Decision, Alignment, Execution, Growth.",
-          image: "/images/image1.jpeg",
-        },
-        {
-          variant: "circle" as const,
-          label: "CORE QUESTION",
-          value: "1",
-          suffix: "",
-          caption: "Where does growth stop inside your organization today?",
-          image: "",
-        },
-        {
-          variant: "dark" as const,
-          label: "VALUE AT RISK",
-          value: "M$",
-          suffix: "",
-          caption: "Millions of dollars in value are lost every year when execution never truly begins.",
-          image: "/images/image2.png",
-        },
-      ],
-    },
-    selectedWork: {
-      heading: "The Executive Growth Journey™",
-      viewAll: "VIEW THE JOURNEY",
-      explore: "EXPLORE",
-      projects: [
-        {
-          name: "Awareness",
-          description:
-            "Every transformation starts when a CEO senses that something needs to change, even before the real problem is fully visible.",
-          image: "/images/image1.jpeg",
-          url: "#",
-        },
-        {
-          name: "Conviction",
-          description:
-            "Understanding is not enough. Organizations move when teams, investors, partners, and clients truly believe in the direction.",
-          image: "/images/image2.png",
-          url: "#",
-        },
-        {
-          name: "Execution",
-          description:
-            "Plans become actions. Conversations become results. Execution is where strategy turns into measurable value.",
-          image: "/images/test.png",
-          url: "#",
-        },
-      ],
-    },
-    spiral: {
-      heading: "Growth never happens by chance. It is engineered.",
-      images: [
-        "/images/image1.jpeg",
-        "/images/image2.png",
-        "/images/image1.jpeg",
-        "/images/image2.png",
-        "/images/image1.jpeg",
-        "/images/image2.png",
-        "/images/image1.jpeg",
-        "/images/image2.png",
-        "/images/image1.jpeg",
-        "/images/image2.png",
-      ],
+        "Our mission is to transform the way leaders convince, influence, and communicate in English — through a premium, personalized, AI-driven learning experience.",
+      cta: "MORE ABOUT ISIDORE",
+      marquee: ["CONVINCE", "INFLUENCE", "COMMUNICATE"],
     },
     footer: {
-      tagline: "REDUCE THE DISTANCE BETWEEN VISION AND GROWTH.",
+      tagline: "LET'S BUILD THE VOICE PEOPLE REMEMBER.",
       timezone: { label: "WAT", zone: "Africa/Lagos" },
-      headline: ["Discover where", "growth stops."],
-      cta: "DISCOVER YOUR EXECUTIVE GROWTH SCORE™",
-      brandName: "COMPETITIVIA",
+      headline: ["Ready to make", "every word count?"],
+      cta: "START YOUR ASSESSMENT",
+      brandName: "ISIDORE",
       enquiry: {
         label: "BUSINESS ENQUIRY",
         email: "contact@isidoreai.org",
