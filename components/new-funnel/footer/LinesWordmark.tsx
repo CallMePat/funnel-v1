@@ -9,8 +9,8 @@ if (typeof window !== "undefined") {
 }
 
 const VIEW_W = 1400;
-const VIEW_H = 330;
-const LINE_SPACING = 12;
+const VIEW_H = 300;
+const LINE_SPACING = 17;
 
 function LinesWordmark({ text }: { text: string }) {
   const clipId = useId();
@@ -59,17 +59,18 @@ function LinesWordmark({ text }: { text: string }) {
     <svg
       ref={rootRef}
       viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
+      width="100%"
+      height="100%"
       preserveAspectRatio="xMidYMid meet"
-      className="block h-auto w-full"
       aria-hidden="true"
     >
       <defs>
         <clipPath id={clipId}>
           <text
             x="50%"
-            y={VIEW_H}
+            y={VIEW_H * 0.86}
             textAnchor="middle"
-            fontSize={VIEW_H * 0.92}
+            fontSize={VIEW_H * 0.88}
             fontWeight="800"
             fontFamily="Arial, Helvetica, sans-serif"
             letterSpacing="2"

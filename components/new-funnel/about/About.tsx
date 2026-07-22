@@ -1,5 +1,6 @@
 import type { DictShape } from "@/app/i18n/dictionaries/fr";
 import ArrowLink from "../reusable/ArrowLink";
+import Parallax from "../reusable/Parallax";
 import ScrollRevealText from "./ScrollRevealText";
 import InfoBlock from "./InfoBlock";
 import Marquee from "./Marquee";
@@ -29,18 +30,18 @@ export default function About({ content }: AboutProps) {
         </div>
 
         <div className="mt-20 grid gap-16 lg:mt-28 lg:grid-cols-2 lg:gap-10">
-          <div className="flex flex-col gap-24 lg:gap-40 lg:pl-24">
+          <Parallax speed={-30} className="flex flex-col gap-24 lg:gap-40 lg:pl-24">
             <InfoBlock text={content.notes[0]} withRule />
             <InfoBlock text={content.notes[1]} />
-          </div>
+          </Parallax>
 
-          <div className="flex max-w-88 flex-col gap-8 lg:justify-self-center">
+          <Parallax speed={70} className="flex max-w-88 flex-col gap-8 lg:justify-self-center">
             <span aria-hidden="true" className="text-neutral-400">✦</span>
             <p className="m-0 text-[15px] leading-relaxed text-neutral-200">{content.mission}</p>
             <div>
               <ArrowLink label={content.cta} />
             </div>
-          </div>
+          </Parallax>
         </div>
       </div>
 

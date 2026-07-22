@@ -73,21 +73,21 @@ export const dict: DictShape = {
           name: "Awareness",
           description:
             "Every transformation starts when a CEO senses that something needs to change, even before the real problem is fully visible.",
-          image: "/images/image1.jpeg",
+          image: "/images/image2.png",
           url: "#",
         },
         {
           name: "Conviction",
           description:
             "Understanding is not enough. Organizations move when teams, investors, partners, and clients truly believe in the direction.",
-          image: "/images/image2.png",
+          image: "/images/test.png",
           url: "#",
         },
         {
           name: "Execution",
           description:
             "Plans become actions. Conversations become results. Execution is where strategy turns into measurable value.",
-          image: "/images/test.png",
+          image: "/images/image2.png",
           url: "#",
         },
       ],

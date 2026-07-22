@@ -1,5 +1,6 @@
 import type { DictShape } from "@/app/i18n/dictionaries/fr";
 import ArrowLink from "../reusable/ArrowLink";
+import Parallax from "../reusable/Parallax";
 import Reveal from "../reusable/Reveal";
 import EstBadge from "./EstBadge";
 import ScrollHint from "./ScrollHint";
@@ -16,7 +17,7 @@ export default function Hero({ content }: HeroProps) {
       <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-black/40 via-black/10 to-black/40" />
 
       <div className="relative z-10 flex flex-1 flex-col justify-between px-5 pb-8 pt-28 sm:px-8 lg:px-10 lg:pt-32">
-        <div className="flex flex-col gap-8">
+        <Parallax speed={90} className="flex flex-col gap-8">
           <Reveal>
             <h1 className="m-0 max-w-xl text-5xl font-medium leading-[1.05] tracking-[-1px] text-neutral-100 sm:text-4xl lg:text-5xl">
               {content.title[0]} {/* <br /> */}
@@ -26,7 +27,7 @@ export default function Hero({ content }: HeroProps) {
           <Reveal delay={0.15}>
             <ArrowLink label={content.cta} />
           </Reveal>
-        </div>
+        </Parallax>
 
         <div className="flex items-end justify-between gap-6">
           <button
@@ -41,13 +42,15 @@ export default function Hero({ content }: HeroProps) {
             <ScrollHint lines={content.hint} />
           </div>
 
-          <EstBadge
-            micLabel={content.micLabel}
-            coaching={content.established.note.split("\n")}
-            blurb={content.blurb}
-            year={content.established.year}
-            note={content.established.note}
-          />
+          <Parallax speed={-40}>
+            <EstBadge
+              micLabel={content.micLabel}
+              coaching={content.established.note.split("\n")}
+              blurb={content.blurb}
+              year={content.established.year}
+              note={content.established.note}
+            />
+          </Parallax>
         </div>
       </div>
     </section>

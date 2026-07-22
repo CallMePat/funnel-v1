@@ -11,6 +11,7 @@ import {
 } from "motion/react";
 import RollingDigit from "./RollingDigit";
 import Image from "next/image";
+import LinesWordmark from "../footer/LinesWordmark";
 
 type Phase = "loading" | "break" | "expand" | "done";
 
@@ -20,7 +21,7 @@ function Preloader() {
   const progress = useMotionValue(0);
   const scaleX = useSpring(
     useTransform(progress, (v) => v / 100),
-    { stiffness: 90, damping: 22 }
+    { stiffness: 90, damping: 22 },
   );
 
   useEffect(() => {
@@ -36,14 +37,14 @@ function Preloader() {
   // hold the mark briefly, then let it swell
   useEffect(() => {
     if (phase !== "break") return;
-    const timer = setTimeout(() => setPhase("expand"), 650);
+    const timer = setTimeout(() => setPhase("expand"), 500);
     return () => clearTimeout(timer);
   }, [phase]);
 
   // start the reveal before the zoom finishes so the two blend
   useEffect(() => {
     if (phase !== "expand") return;
-    const timer = setTimeout(() => setPhase("done"), 1100);
+    const timer = setTimeout(() => setPhase("done"), 700);
     return () => clearTimeout(timer);
   }, [phase]);
 
@@ -63,12 +64,15 @@ function Preloader() {
         <motion.div
           aria-hidden="true"
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
+          transition={{ duration: 0.1, ease: "easeInOut" }}
           className="fixed inset-0 z-100 flex items-center justify-center overflow-hidden bg-[#111110] font-sans text-white"
         >
           {phase === "loading" ? (
             <div className="h-5 w-28 overflow-hidden bg-[#2b2b29]">
-              <motion.div className="h-full w-full origin-left bg-white" style={{ scaleX }} />
+              <motion.div
+                className="h-full w-full origin-left bg-white"
+                style={{ scaleX }}
+              />
             </div>
           ) : (
             <>
@@ -97,11 +101,17 @@ function Preloader() {
                 }
                 transition={
                   phase === "expand"
-                    ? { duration: 1.4, ease: [0.65, 0, 0.35, 1] }
-                    : { type: "spring", stiffness: 150, damping: 20, delay: 0.15 }
+                    ? { duration: 1.2, ease: [0.65, 0, 0.35, 0] }
+                    : {
+                        type: "spring",
+                        stiffness: 150,
+                        damping: 20,
+                        delay: 0.00000001,
+                      }
                 }
               >
-                <Image src="/logos/logo.png" alt="Isidore Mark" width={64} height={64} />
+                <LinesWordmark text="ISIDORE" />
+                {/* <Image src="/logos/logo.png" alt="Isidore Mark" width={64} height={64} /> */}
                 {/* <svg width="64" height="64" viewBox="0 0 26 26" fill="none" aria-hidden="true">
                   <path d="M3 6h14l-3 4H8l4 10-3 2L3 6z" fill="white" />
                   <path d="M14 12h9l-2.5 3.5H16L14 12z" fill="white" />

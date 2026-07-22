@@ -14,9 +14,7 @@ export interface FooterProps {
   onSubscribe?: (email: string) => void;
 }
 
-export default function Footer({
-  content,
-}: FooterProps) {
+export default function Footer({ content }: FooterProps) {
   return (
     <footer className="relative flex min-h-screen flex-col justify-between overflow-hidden bg-[#111110] font-sans text-white">
       <SmokeBackground />
@@ -33,9 +31,10 @@ export default function Footer({
 
         <div className="mt-3 grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
           <div className="flex flex-col gap-10">
-            <h2 className="m-0 text-[2.6rem] font-medium leading-[1.08] tracking-[-1px] text-neutral-100 sm:text-6xl lg:text-[4.2rem]">
+            <h2 className="m-0 max-w-xl text-[2.5rem] font-medium leading-[1.08] tracking-[-1px] text-neutral-100 sm:text-6xl lg:text-[3rem]">
               {content.headline[0]}
-              <br />
+              {" "}
+              {/* <br /> */}
               {content.headline[1]}
             </h2>
             <p className="m-0 text-[13px] tracking-[0.3px] text-neutral-500">

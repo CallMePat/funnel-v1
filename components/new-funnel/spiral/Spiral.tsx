@@ -277,7 +277,7 @@ export default function Spiral({ content }: SpiralProps) {
             animateOnScroll={false}
             delayMs={650}
             as="h1"
-            className="max-w-6xl text-center text-[clamp(2rem,8vw,4rem)] font-medium leading-[0.92] tracking-[-0.06em] text-white"
+            className="max-w-6xl text-center text-[clamp(2rem,8vw,3rem)] font-medium leading-[0.92] tracking-[-0.06em] text-white"
           />
         </div>
       </div>

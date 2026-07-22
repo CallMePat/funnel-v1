@@ -1,5 +1,6 @@
 import type { DictShape } from "@/app/i18n/dictionaries/fr";
 import Image from "next/image";
+import Parallax from "../reusable/Parallax";
 import Reveal from "../reusable/Reveal";
 
 type KeyFactsContent = DictShape["newFunnel"]["keyFacts"];
@@ -105,14 +106,16 @@ export default function KeyFacts({ content }: KeyFactsProps) {
   return (
     <section className="w-full bg-gradient-to-b from-neutral-200 to-neutral-100 py-20 font-sans lg:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <Reveal className="mb-14 text-center lg:mb-20">
-          <h2 className="m-0 text-6xl font-medium tracking-[-0.03em] text-neutral-700 sm:text-7xl">
-            {content.heading}
-          </h2>
-          <p className="mx-auto mt-4 max-w-xs text-lg leading-snug text-neutral-500">
-            {content.subtitle}
-          </p>
-        </Reveal>
+        <Parallax speed={50}>
+          <Reveal className="mb-14 text-center lg:mb-20">
+            <h2 className="m-0 text-6xl font-medium tracking-[-0.03em] text-neutral-700 sm:text-7xl">
+              {content.heading}
+            </h2>
+            <p className="mx-auto mt-4 max-w-xs text-lg leading-snug text-neutral-500">
+              {content.subtitle}
+            </p>
+          </Reveal>
+        </Parallax>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {content.cards.map((card, index) => (
