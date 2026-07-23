@@ -1,7 +1,7 @@
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 
-type Enquiry = DictShape["newFunnel"]["footer"]["enquiry"];
-type Social = DictShape["newFunnel"]["footer"]["social"];
+type Enquiry = NewFunnelContent["footer"]["enquiry"];
+type Social = NewFunnelContent["footer"]["social"];
 
 function MenuContact({
   enquiry,

@@ -2,9 +2,9 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 
-type VideoContent = DictShape["newFunnel"]["about"]["video"];
+type VideoContent = NewFunnelContent["about"]["video"];
 
 function VideoExpand({ content }: { content: VideoContent }) {
   const trackRef = useRef<HTMLDivElement>(null);

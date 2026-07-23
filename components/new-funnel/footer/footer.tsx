@@ -1,12 +1,12 @@
 "use client";
 
 import type { Locale } from "@/app/i18n";
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import LinesWordmark from "./LinesWordmark";
 import SmokeBackground from "./SmokeBackground";
 import SocialIcon from "../reusable/SocialIcon";
 
-type NewFunnelFooterContent = DictShape["newFunnel"]["footer"];
+type NewFunnelFooterContent = NewFunnelContent["footer"];
 
 export interface FooterProps {
   locale: Locale;
@@ -16,8 +16,10 @@ export interface FooterProps {
 
 export default function Footer({ content }: FooterProps) {
   return (
-    <footer className="relative flex min-h-screen flex-col justify-between overflow-hidden bg-[#111110] font-sans text-white">
-      <SmokeBackground />
+    <footer className="relative bg-black flex min-h-screen flex-col justify-between overflow-hidden font-sans text-white">
+      <div className="absolute inset-0">
+        <SmokeBackground />
+      </div>
 
       <div className="relative z-10 px-5 pt-8 sm:px-8 lg:px-10 lg:pt-10">
         <div className="flex items-start justify-between gap-6">

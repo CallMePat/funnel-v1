@@ -1,10 +1,10 @@
 "use client";
 
 import { useLayoutEffect, useRef } from "react";
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import Image from "next/image";
 
-type FeaturedProjectsContent = DictShape["newFunnel"]["featuredProjects"];
+type FeaturedProjectsContent = NewFunnelContent["featuredProjects"];
 type RevealState = "hidden" | "animating" | "revealed";
 
 interface StripBounds {

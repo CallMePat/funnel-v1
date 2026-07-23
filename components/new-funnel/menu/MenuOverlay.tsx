@@ -3,13 +3,13 @@
 import { useEffect, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion } from "motion/react";
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import MenuLinks from "./MenuLinks";
 import MenuContact from "./MenuContact";
 
-export type MenuContent = DictShape["newFunnel"]["menu"] & {
-  enquiry: DictShape["newFunnel"]["footer"]["enquiry"];
-  social: DictShape["newFunnel"]["footer"]["social"];
+export type MenuContent = NewFunnelContent["menu"] & {
+  enquiry: NewFunnelContent["footer"]["enquiry"];
+  social: NewFunnelContent["footer"]["social"];
 };
 
 interface MenuOverlayProps {

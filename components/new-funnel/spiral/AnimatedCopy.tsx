@@ -66,7 +66,7 @@ function AnimatedCopy({
       if (timeoutId !== null) window.clearTimeout(timeoutId);
       observer?.disconnect();
     };
-  }, [animateOnScroll, delayMs]);
+  }, [Tag, animateOnScroll, delayMs]);
 
   const content = words.map((word, index) => (
     <span

@@ -1,6 +1,6 @@
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 
-type MenuLinkItems = DictShape["newFunnel"]["menu"]["links"];
+type MenuLinkItems = NewFunnelContent["menu"]["links"];
 
 function MenuLinks({
   links,

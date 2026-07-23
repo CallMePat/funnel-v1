@@ -1,6 +1,4 @@
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
-
-type NewFunnelContent = DictShape["newFunnel"];
+import type { DictShape, NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 
 function getShortReserveLabel(dict: DictShape) {
   return dict.hero.title === "ISIDORE AI" ? "Book" : "Reserver";
@@ -38,12 +36,12 @@ function splitQuestion(text: string) {
 }
 
 export function getNewFunnelContent(dict: DictShape): NewFunnelContent {
-  const fallback = dict.newFunnel;
+  const fallback: NewFunnelContent = dict.newFunnel;
   const heroTitle = splitQuestion(dict.hero.question);
   const footerHeadline = splitHeadline(dict.worth.makeSure);
   const shortReserveLabel = getShortReserveLabel(dict);
 
-  return {
+  const content: NewFunnelContent = {
     hero: {
       brand: dict.hero.title,
       letsTalk: shortReserveLabel,
@@ -75,7 +73,7 @@ export function getNewFunnelContent(dict: DictShape): NewFunnelContent {
       video: fallback.about.video,
     },
     keyFacts: {
-      heading: dict.masterclass.title,
+      heading: fallback.keyFacts.heading,
       subtitle: dict.transformation.title,
       cards: [
         {
@@ -105,7 +103,7 @@ export function getNewFunnelContent(dict: DictShape): NewFunnelContent {
       ],
     },
     selectedWork: {
-      heading: dict.journey.title,
+      heading: fallback.selectedWork.heading,
       viewAll: dict.ctas.nextExecutiveMoment,
       explore: fallback.selectedWork.explore,
       projects: [
@@ -189,5 +187,18 @@ export function getNewFunnelContent(dict: DictShape): NewFunnelContent {
         },
       ],
     },
+    painPoints: fallback.painPoints,
+    communicationAsset: fallback.communicationAsset,
+    transformation: fallback.transformation,
+    decision: fallback.decision,
+    worth: fallback.worth,
+    preparingSection: fallback.preparingSection,
+    assessment: fallback.assessment,
+    sprint: fallback.sprint,
+    investment: fallback.investment,
+    whyIsidore: fallback.whyIsidore,
+    masterclass: fallback.masterclass,
   };
+
+  return content;
 }

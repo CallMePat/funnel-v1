@@ -10,7 +10,6 @@ import {
   useTransform,
 } from "motion/react";
 import RollingDigit from "./RollingDigit";
-import Image from "next/image";
 import LinesWordmark from "../footer/LinesWordmark";
 
 type Phase = "loading" | "break" | "expand" | "done";

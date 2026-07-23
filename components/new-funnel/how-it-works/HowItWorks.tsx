@@ -2,10 +2,10 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useSpring } from "motion/react";
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import StepCard from "./StepCard";
 
-type HowItWorksContent = DictShape["newFunnel"]["howItWorks"];
+type HowItWorksContent = NewFunnelContent["howItWorks"];
 
 export interface HowItWorksProps {
   content: HowItWorksContent;

@@ -1,12 +1,11 @@
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import ArrowLink from "../reusable/ArrowLink";
 import Parallax from "../reusable/Parallax";
 import ScrollRevealText from "./ScrollRevealText";
 import InfoBlock from "./InfoBlock";
 import Marquee from "./Marquee";
-import VideoExpand from "./VideoExpand";
 
-type AboutContent = DictShape["newFunnel"]["about"];
+type AboutContent = NewFunnelContent["about"];
 
 export interface AboutProps {
   content: AboutContent;
@@ -14,18 +13,18 @@ export interface AboutProps {
 
 export default function About({ content }: AboutProps) {
   return (
-    <section className="relative z-10 flex min-h-screen flex-col justify-between overflow-hidden font-sans text-white">
+    <section className="relative z-10 flex min-h-screen flex-col justify-between bg-white overflow-hidden font-sans text-black">
       {/* Legibility scrim over the shared Spline scene */}
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-black/45" />
+      {/* <div className="pointer-events-none absolute inset-0 -z-10 bg-black/45" /> */}
 
       <div className="px-5 pt-14 sm:px-8 lg:px-10 lg:pt-20">
         <div className="flex flex-col gap-10 lg:flex-row lg:gap-16">
-          <p className="m-0 shrink-0 font-mono text-[11px] uppercase tracking-[1.5px] text-neutral-400">
+          <p className="m-0 shrink-0 font-mono text-[11px] uppercase tracking-[1.5px] ">
             {content.label}
           </p>
           <ScrollRevealText
             text={content.statement}
-            className="m-0 max-w-4xl text-3xl font-medium leading-[1.25] tracking-[-0.5px] text-neutral-100 sm:text-4xl lg:pl-10 lg:text-[3.1rem]"
+            className="m-0 max-w-4xl text-3xl font-medium leading-[1.25] tracking-[-0.5px] text-black sm:text-4xl lg:pl-10 lg:text-[3.1rem]"
           />
         </div>
 
@@ -37,7 +36,7 @@ export default function About({ content }: AboutProps) {
 
           <Parallax speed={70} className="flex max-w-88 flex-col gap-8 lg:justify-self-center">
             <span aria-hidden="true" className="text-neutral-400">✦</span>
-            <p className="m-0 text-[15px] leading-relaxed text-neutral-200">{content.mission}</p>
+            <p className="m-0 text-[15px] leading-relaxed text-black">{content.mission}</p>
             <div>
               <ArrowLink label={content.cta} />
             </div>

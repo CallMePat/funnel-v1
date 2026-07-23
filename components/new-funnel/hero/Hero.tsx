@@ -1,11 +1,11 @@
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import ArrowLink from "../reusable/ArrowLink";
 import Parallax from "../reusable/Parallax";
 import Reveal from "../reusable/Reveal";
 import EstBadge from "./EstBadge";
 import ScrollHint from "./ScrollHint";
 
-type HeroContent = DictShape["newFunnel"]["hero"];
+type HeroContent = NewFunnelContent["hero"];
 
 export interface HeroProps {
   content: HeroContent;

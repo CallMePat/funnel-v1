@@ -2,10 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import AnimatedCopy from "./AnimatedCopy";
 
-type SpiralContent = DictShape["newFunnel"]["spiral"];
+type SpiralContent = NewFunnelContent["spiral"];
 
 interface SpiralProps {
   content: SpiralContent;

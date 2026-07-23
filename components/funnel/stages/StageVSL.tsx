@@ -2,7 +2,7 @@
 
 import { DictShape } from "@/app/i18n/dictionaries/fr";
 import { useState, useRef } from "react";
-import { VolumeX, Volume2 } from "lucide-react";
+import { VolumeX } from "lucide-react";
 
 interface StageVSLProps {
   dict: DictShape;
@@ -90,7 +90,7 @@ export default function StageVSL({ dict }: StageVSLProps) {
         </svg>
 
         <div className="font-serif italic text-lg sm:text-xl px-2 text-center text-muted-foreground bg-brand/5 py-2 px-6 rounded-[2rem] border border-brand/20 shadow-sm max-w-2xl text-balance leading-relaxed">
-          "{dict.vsl.footer}"
+          &quot;{dict.vsl.footer}&quot;
         </div>
 
         <svg className="w-12 h-12 text-brand/60 hidden sm:block -rotate-12 ml-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">

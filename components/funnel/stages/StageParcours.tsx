@@ -67,7 +67,7 @@ export default function StageParcours({ dict }: StageParcoursProps) {
                   {dict.masterclass.questionIntro}
                 </p>
                 <p className="text-2xl sm:text-3xl font-display text-brand-light italic">
-                  "{dict.masterclass.question}"
+                  &quot;{dict.masterclass.question}&quot;
                 </p>
               </div>
             </div>

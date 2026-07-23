@@ -1,7 +1,7 @@
 "use client";
 
 import type { Locale } from "@/app/i18n";
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import Hero from "./hero/Hero";
 import Navbar from "./hero/Navbar";
 import SplineBackground from "./hero/SplineBackground";
@@ -10,15 +10,22 @@ import About from "./about/About";
 import KeyFacts from "./key-facts/KeyFacts";
 import SelectedWork from "./selected-work/SelectedWork";
 import Footer from "./footer/footer";
+import PainPoints from "./pain-points/PainPoints";
+import CommunicationAsset from "./communication-asset/CommunicationAsset";
+import Transformation from "./transformation/Transformation";
+import Decision from "./decision/Decision";
+import Worth from "./worth/Worth";
+import PreparingFor from "./preparing-for/PreparingFor";
+import Assessment from "./assessment/Assessment";
+import Sprint from "./sprint/Sprint";
+import Investment from "./investment/Investment";
+import WhyIsidore from "./why-isidore/WhyIsidore";
+import Masterclass from "./masterclass/Masterclass";
 import { useRef, useState } from "react";
 import Preloader, { isInitialLoad } from "./Preloader/Preloader";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 const SPLINE_SCENE =
   "https://prod.spline.design/gQTzOsb39iXQFw09/scene.splinecode";
-
-type NewFunnelContent = DictShape["newFunnel"];
 
 interface NewFunnelFlowProps {
   dict: NewFunnelContent;
@@ -33,36 +40,11 @@ function NewFunnelFlow({ dict, locale }: NewFunnelFlowProps) {
   };
   const [loaderAnimating, setLoaderAnimating] =
     useState<boolean>(isInitialLoad);
-  // const heroImgRef = useRef(null);
-  // const heroHeaderRef = useRef(null);
   const heroSectionRef = useRef(null);
 
   const handlePreloaderComplete = () => {
     setLoaderAnimating(false);
   };
-
-  // useGSAP(() => {
-  //   if (!heroImgRef.current || !heroHeaderRef.current) return;
-
-  //   gsap.set(heroImgRef.current, { y: 500 });
-  //   // gsap.to(heroImgRef.current, {
-  //   //   y: 0,
-  //   //   duration: 0.75,
-  //   //   ease: "power3.out",
-  //   //   // delay: isInitialLoad ? 1.75 : 0,
-  //   // });
-
-  //   gsap.to(heroHeaderRef.current, {
-  //     y: 10,
-  //     ease: "none",
-  //     scrollTrigger: {
-  //       trigger: heroSectionRef.current,
-  //       start: "top top",
-  //       end: "bottom top",
-  //       scrub: true,
-  //     },
-  //   });
-  // });
 
   return (
     <div className="relative">
@@ -73,9 +55,10 @@ function NewFunnelFlow({ dict, locale }: NewFunnelFlowProps) {
           loaderAnimating ? "pointer-events-none opacity-0" : "opacity-100"
         }`}
       >
-          <div className="pointer-events-none fixed inset-0 z-0">
-            <SplineBackground scene={SPLINE_SCENE} />
-          </div>
+        <div className="pointer-events-none fixed inset-0 z-0">
+          <SplineBackground scene={SPLINE_SCENE} />
+        </div>
+
         <header className="fixed inset-x-0 top-0 z-20">
           <Navbar
             brand={dict.hero.brand}
@@ -85,16 +68,38 @@ function NewFunnelFlow({ dict, locale }: NewFunnelFlowProps) {
           />
         </header>
 
-        <Hero content={dict.hero} />
-        <About content={dict.about} />
+        <main ref={heroSectionRef} className="relative z-10">
+          {/* Opening — over the shared Spline scene */}
+          <Hero content={dict.hero} />
+          <PainPoints content={dict.painPoints} />
+          <CommunicationAsset content={dict.communicationAsset} />
+          <Transformation content={dict.transformation} />
+          <Decision content={dict.decision} />
+          <Worth content={dict.worth} />
+          <PreparingFor content={dict.preparingSection} />
+          <Assessment content={dict.assessment} />
 
-        <div className="relative z-30 bg-[#111110]">
+          {/* The real problem — confidence over expertise */}
+          <About content={dict.about} />
           <KeyFacts content={dict.keyFacts} />
+
+          {/* The offer */}
+          <Sprint content={dict.sprint} />
+          <Investment content={dict.investment} />
+          <WhyIsidore content={dict.whyIsidore} />
+
+          {/* The journey */}
+          {/* <HowItWorks content={dict.howItWorks} /> */}
           <SelectedWork content={dict.selectedWork} />
-          <Spiral content={dict.spiral} />
+
+          {/* Masterclass + the big idea */}
+          <Masterclass content={dict.masterclass} />
+          <div className="relative bg-[#0b0b0d]">
+            <Spiral content={dict.spiral} />
+          </div>
 
           <Footer locale={locale} content={dict.footer} />
-        </div>
+        </main>
       </div>
     </div>
   );

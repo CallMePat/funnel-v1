@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 
-type SelectedWorkContent = DictShape["newFunnel"]["selectedWork"];
+type SelectedWorkContent = NewFunnelContent["selectedWork"];
 type Project = SelectedWorkContent["projects"][number];
 
 interface SelectedWorkProps {

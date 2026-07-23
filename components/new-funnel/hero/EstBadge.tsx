@@ -2,11 +2,11 @@ interface EstBadgeProps {
   micLabel: string;
   coaching: string[];
   blurb: string;
-  year: string;
-  note: string
+  year?: string;
+  note?: string;
 }
 
-function EstBadge({ micLabel, coaching, blurb, year, note }: EstBadgeProps) {
+function EstBadge({ micLabel, coaching, blurb }: EstBadgeProps) {
   return (
     <div className="w-[210px]">
       <div

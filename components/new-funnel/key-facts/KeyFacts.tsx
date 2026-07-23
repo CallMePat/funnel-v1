@@ -1,9 +1,9 @@
-import type { DictShape } from "@/app/i18n/dictionaries/fr";
+import type { NewFunnelContent } from "@/app/i18n/dictionaries/fr";
 import Image from "next/image";
 import Parallax from "../reusable/Parallax";
 import Reveal from "../reusable/Reveal";
 
-type KeyFactsContent = DictShape["newFunnel"]["keyFacts"];
+type KeyFactsContent = NewFunnelContent["keyFacts"];
 type KeyFactCard = KeyFactsContent["cards"][number];
 
 interface KeyFactsProps {

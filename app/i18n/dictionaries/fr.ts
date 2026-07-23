@@ -183,6 +183,147 @@ export const dict = {
         },
       ],
     },
+    painPoints: {
+      label: "Vous etes peut-etre confronte a ces questions...",
+      questions: [
+        "Pourquoi mes clients ne percoivent-ils pas toute la valeur de ce que j'apporte ?",
+        "Pourquoi quelqu'un de moins competent remporte-t-il parfois l'opportunite ?",
+        "Pourquoi mon message ne produit-il pas l'impact que je sais pouvoir creer ?",
+      ],
+    },
+    communicationAsset: {
+      label: "L'ACTIF STRATEGIQUE",
+      statement: "Votre communication est l'un de vos actifs les plus strategiques.",
+      lines: [
+        "Chaque dirigeant prepare sa reunion.",
+        "Tres peu se preparent eux-memes.",
+      ],
+    },
+    transformation: {
+      kicker: "En seulement 7 jours,",
+      heading: "transformez la facon dont votre expertise est percue.",
+      without: [
+        "Sans des mois de formation.",
+        "Sans coaching interminable.",
+        "Sans apprendre par essais et erreurs.",
+      ],
+      ctas: [
+        "Construire mon Communication Asset™",
+        "Reserver ma Masterclass Executive",
+      ],
+    },
+    decision: {
+      heading: "Chaque grande decision commence par une conversation.",
+      intro: "Chaque conversation influence :",
+      shapes: [
+        "La confiance",
+        "L'autorite",
+        "L'influence",
+        "La decision",
+        "Les opportunites",
+      ],
+    },
+    worth: {
+      label: "LA PERCEPTION",
+      statement: "Votre audience decide souvent de la valeur de votre expertise...",
+      emphasis: "avant meme d'avoir pleinement compris ce que vous faites.",
+    },
+    preparingSection: {
+      title: "A quoi vous preparez-vous ?",
+      options: [
+        "Convaincre un client",
+        "Lever des fonds",
+        "Signer un partenariat",
+        "Monter sur scene",
+        "Negocier un contrat",
+        "Recruter un talent",
+        "Presenter devant votre Conseil",
+        "Developper a l'international",
+      ],
+      cta: "C'est mon prochain Executive Moment™",
+    },
+    assessment: {
+      label: "L'EVALUATION",
+      title: "Executive Communication Assessment™",
+      statement: "Decouvrez ce que votre audience sait deja de vous...",
+      emphasis: "avant meme que vous terminiez votre presentation.",
+      steps: ["Enregistrer", "Analyser", "Ameliorer"],
+      receiveLabel: "Recevez immediatement",
+      deliverables: [
+        "Executive Communication Score™",
+        "Executive Presence™",
+        "Authority™",
+        "Persuasion™",
+        "Leadership Signal™",
+        "Vos 3 principaux Executive Insights™",
+      ],
+      cta: "Decouvrir mon Executive Communication Score™",
+    },
+    sprint: {
+      label: "LA TRANSFORMATION",
+      title: "Pitch Asset Sprint™",
+      days: "7 jours.",
+      objective: "Un objectif.",
+      statement: "Faire en sorte que votre communication reflete enfin la veritable valeur de votre expertise.",
+      negations: ["Ce n'est pas un coaching.", "Ce n'est pas une formation."],
+      affirmation: "C'est une transformation mesurable.",
+      leaveLabel: "Vous repartez avec",
+      deliverables: [
+        "Executive Communication Score™",
+        "Pitch Asset Score™",
+        "Comparatif Avant / Apres™",
+        "Executive Communication Report™",
+        "Executive Roadmap™",
+        "Recommandations IA™",
+        "Acces prioritaire a Isidore AI App 2™",
+      ],
+    },
+    investment: {
+      label: "L'INVESTISSEMENT",
+      title: "Investissement",
+      fullPrice: "1 990 €",
+      bonusTitle: "Executive Decision Bonus™",
+      bonusText: "Reservez votre Sprint dans les 24 heures suivant votre Masterclass.",
+      credit: "Recevez un credit exceptionnel de 500 €.",
+      becomesLabel: "Votre investissement devient",
+      finalPrice: "1 490 €",
+      cta: "Rejoindre le Pitch Asset Sprint™",
+    },
+    whyIsidore: {
+      title: "Pourquoi Isidore AI ?",
+      dontTeach: "Nous n'enseignons pas la communication.",
+      buildAssets: "Nous faisons en sorte que votre communication reflete enfin la valeur reelle de votre expertise.",
+      approachLabel: "Notre approche combine",
+      features: [
+        "Intelligence Artificielle",
+        "Psychologie du dirigeant",
+        "Sciences de la communication",
+        "Simulations executives",
+        "Analyse des donnees",
+        "Mesure continue",
+      ],
+    },
+    masterclass: {
+      label: "LA MASTERCLASS",
+      title: "Executive Communication Masterclass™",
+      duration: "30 minutes.",
+      host: "Avec Axelle Frini.",
+      features: [
+        "Aucune vente.",
+        "Aucune pression.",
+        "Uniquement une reflexion strategique.",
+      ],
+      questionIntro: "Nous repondrons a une seule question.",
+      question: "Qu'est-ce qui empeche aujourd'hui votre expertise de produire l'impact qu'elle merite ?",
+      discoverIntro: "Vous decouvrirez",
+      discoverPoints: [
+        "Pourquoi certains dirigeants inspirent immediatement confiance.",
+        "Ce qui reduit inconsciemment votre credibilite.",
+        "Ce que l'IA revele que vous ne voyez pas encore.",
+        "Comment preparer votre prochain Executive Moment™.",
+      ],
+      cta: "Reserver ma Executive Communication Masterclass™",
+    },
   },
   meta: {
     title: "ISIDORE AI - Executive Communication Assets™",
@@ -344,4 +485,5 @@ export const dict = {
   }
 };
 
+export type NewFunnelContent = typeof dict.newFunnel;
 export type DictShape = typeof dict;
